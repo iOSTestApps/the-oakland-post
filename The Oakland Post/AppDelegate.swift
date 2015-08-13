@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        BuddyBuildSDK.setup()
+        
         var tabBarController = window!.rootViewController as! UITabBarController
         tabBarController.delegate = self
 
